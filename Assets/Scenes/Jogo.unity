@@ -757,6 +757,223 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1060732604
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 523309610386331324, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 670169724750904299, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: kitchenBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 670735467693330222, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: cardboardBoxOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088011024746661379, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: stoolBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205238182150380734, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: kitchenCabinetDrawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1251276389895870796, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: books
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733920229575641502, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: cardboardBoxOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969560606153356412, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141589825041756902, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: books
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403289924801256650, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: chairCushion
+      objectReference: {fileID: 0}
+    - target: {fileID: 2405668036467706026, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wallDoorway
+      objectReference: {fileID: 0}
+    - target: {fileID: 3067659982267614890, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: kitchenCabinetDrawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3568958347175513882, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 4089660721640453296, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: coatRackStanding
+      objectReference: {fileID: 0}
+    - target: {fileID: 4282557282958448616, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: kitchenBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537557819377614260, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: floorCornerRound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648332859176168749, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: kitchenCabinetDrawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4814017580205693951, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: floorFull
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070255665226460252, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: chairCushion
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093475405553177211, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 5111270454395870478, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266465654678207345, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: stoolBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431520474147607863, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: kitchenCabinet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577705024563379363, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wallDoorway
+      objectReference: {fileID: 0}
+    - target: {fileID: 5652610990661552585, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711174648775432048, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045759349464947740, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045759349464947740, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045759349464947740, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045759349464947740, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045759349464947740, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045759349464947740, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045759349464947740, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045759349464947740, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045759349464947740, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045759349464947740, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240408833795521498, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245959151872292701, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: cardboardBoxOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407370685578475914, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: cardboardBoxOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6532956045392324420, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: lampWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6580290705212374105, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wallHalf
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599305648099126083, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6640241666215639252, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: cabinetBedDrawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6782234364744986730, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wallCorner
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263230452938053884, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: lampRoundTable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480145809593973944, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: chairCushion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051896092116801548, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: bookcaseOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197710975738821418, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: chairCushion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606341249510407984, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: books
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656001330104447845, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: chairCushion
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068637143252145950, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_Name
+      value: wall
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
 --- !u!1 &1167615209
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,8 +1137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d490bf71e7b26743a086bd737f2c680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valueText: {fileID: 0}
-  slider: {fileID: 1338469979}
 --- !u!114 &1338469979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,7 +1447,7 @@ GameObject:
   - component: {fileID: 1773432454}
   - component: {fileID: 1773432453}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1365,3 +1580,4 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 1773432456}
   - {fileID: 1341620437}
+  - {fileID: 1060732604}
