@@ -369,7 +369,7 @@ Transform:
   m_GameObject: {fileID: 674008317}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0837528, y: 0.38550782, z: 1.13382}
+  m_LocalPosition: {x: -3.071, y: 0.386, z: 1.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -849,6 +849,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall
       objectReference: {fileID: 0}
+    - target: {fileID: 4062518869718375582, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.624668
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062518869718375582, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.384722
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062518869718375582, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062518869718375582, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 4089660721640453296, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
       propertyPath: m_Name
       value: coatRackStanding
@@ -856,6 +872,10 @@ PrefabInstance:
     - target: {fileID: 4282557282958448616, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
       propertyPath: m_Name
       value: kitchenBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395211716057556767, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.384722
       objectReference: {fileID: 0}
     - target: {fileID: 4537557819377614260, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
       propertyPath: m_Name
@@ -885,6 +905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stoolBar
       objectReference: {fileID: 0}
+    - target: {fileID: 5405960960085427704, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5586607
+      objectReference: {fileID: 0}
     - target: {fileID: 5431520474147607863, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
       propertyPath: m_Name
       value: kitchenCabinet
@@ -900,6 +924,10 @@ PrefabInstance:
     - target: {fileID: 5711174648775432048, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
       propertyPath: m_Name
       value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936501977774319844, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.384722
       objectReference: {fileID: 0}
     - target: {fileID: 6045759349464947740, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
       propertyPath: m_LocalPosition.x
@@ -941,6 +969,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6081456111998412951, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.624668
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081456111998412951, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.384722
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081456111998412951, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.373
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081456111998412951, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 6240408833795521498, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
       propertyPath: m_Name
       value: wall
@@ -981,6 +1025,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairCushion
       objectReference: {fileID: 0}
+    - target: {fileID: 7668391797819592699, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6246678
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668391797819592699, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3847215
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875353409952283045, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.384722
+      objectReference: {fileID: 0}
     - target: {fileID: 8051896092116801548, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
       propertyPath: m_Name
       value: bookcaseOpen
@@ -996,6 +1052,22 @@ PrefabInstance:
     - target: {fileID: 8656001330104447845, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
       propertyPath: m_Name
       value: chairCushion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763365662288070038, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.09835536
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763365662288070038, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.384722
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763365662288070038, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.9692
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763365662288070038, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0102
       objectReference: {fileID: 0}
     - target: {fileID: 9068637143252145950, guid: 653e4a0add03bcf458b4b3d80edc0337, type: 3}
       propertyPath: m_Name
@@ -1298,19 +1370,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ce5762145e8637f40b72246b1ef29e97, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce5762145e8637f40b72246b1ef29e97, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce5762145e8637f40b72246b1ef29e97, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce5762145e8637f40b72246b1ef29e97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0837528
+      value: 2.633
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce5762145e8637f40b72246b1ef29e97, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1318,7 +1390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce5762145e8637f40b72246b1ef29e97, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.427
+      value: -0.729
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce5762145e8637f40b72246b1ef29e97, type: 3}
       propertyPath: m_LocalRotation.w
