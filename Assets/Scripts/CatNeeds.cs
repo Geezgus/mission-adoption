@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -25,6 +26,9 @@ public class CatNeeds : MonoBehaviour
     private bool goingEat, goingDrink = false;
     private bool onFoodBowl, onWaterBowl = false;
 
+    [SerializeField] Clock clock;
+    float lastHour = -1f;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -45,31 +49,47 @@ public class CatNeeds : MonoBehaviour
 
     void Update()
     {
-        if (!isEating)
+        if (lastHour != clock.Hours % 24)
         {
-            if(hunger > 0f) hunger -= hungerDecreaseRate * Time.deltaTime;
+            print(clock.Hours);
+            lastHour = clock.Hours % 24;
+
+            hunger = Mathf.Max(hunger - (hungerSlider.maxValue / 12f), 0);
             hungerSlider.value = hunger;
 
-            
-            if (hunger <= hungerThreshold)
-            {
-                hungerIndicator.gameObject.SetActive(true);
-                goingEat = true;
-            }
-           
-        }
-
-        if (!isDrinking)
-        {
-            if(thirst > 0f ) thirst -= thirstDecreaseRate * Time.deltaTime;
+            thirst = Mathf.Max(thirst - (thirstSlider.maxValue / 18f), 0);
             thirstSlider.value = thirst;
-             if ( thirst <= thirstThreshold) 
-            {
-                thirstIndicator.gameObject.SetActive(true);
-                goingDrink = true;
-            }
-
         }
+
+        if (hunger <= hungerThreshold)
+        {
+            hungerIndicator.gameObject.SetActive(true);
+            goingEat = true;
+        }
+        else if ( thirst <= thirstThreshold) 
+        {
+            thirstIndicator.gameObject.SetActive(true);
+            goingDrink = true;
+        }
+        
+        
+        // if (!isEating)
+        // {
+        //     if(hunger > 0f) hunger -= hungerDecreaseRate * Time.deltaTime;
+        //     hungerSlider.value = hunger;
+
+            
+        
+           
+        // }
+
+        // if (!isDrinking)
+        // {
+        //     if(thirst > 0f ) thirst -= thirstDecreaseRate * Time.deltaTime;
+        //     thirstSlider.value = thirst;
+        //      
+
+        // }
 
         if(isEating && hunger <= 100f && onFoodBowl) Eat();
         if(isDrinking && thirst <= 100f && onWaterBowl) Drink();
@@ -85,7 +105,8 @@ public class CatNeeds : MonoBehaviour
 
             return foodPos.position;
         } 
-        else  if (!isDrinking && goingDrink && waterScript.isFull)
+        
+        if (!isDrinking && goingDrink && waterScript.isFull)
         {
             isDrinking = true;
             goingDrink = false;
