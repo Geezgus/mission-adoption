@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaterController : MonoBehaviour
 {
     Vector3 targetLocalScale = Vector3.one - Vector3.up;
+    [SerializeField] SceneAsset gameScene;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +19,15 @@ public class WaterController : MonoBehaviour
     void Update()
     {
         transform.localScale = Vector3.Lerp(transform.localScale, targetLocalScale, 2f * Time.deltaTime);
+        
+        if (targetLocalScale != Vector3.one - Vector3.up)
+        {
+            if (transform.localScale.y > (0.9 * targetLocalScale.y))
+            {
+                SceneManager.LoadScene(gameScene.name);
+                // SceneManager.LoadSceneAsync(gameScene.name, LoadSceneMode.Additive);
+            }
+        }
     }
 
     public void Fill(Rate rate)
