@@ -45,3 +45,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Frame
+    uniqueID: 1913561249
+    locked: 0
+  - name: Water
+    uniqueID: 1005588691
+    locked: 0
+  - name: Markers
+    uniqueID: 1422319053
+    locked: 0
