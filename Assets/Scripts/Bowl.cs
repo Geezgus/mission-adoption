@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 using Microsoft.Unity.VisualStudio.Editor;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class Bowl : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class Bowl : MonoBehaviour
     public GameObject eKey, cat;
     private CatNeeds catNeeds;
     public bool isFull = false;
+
+    [SerializeField] SceneAsset MinigameScene;
 
     void Start()
     {
@@ -38,6 +42,7 @@ public class Bowl : MonoBehaviour
         else if (other.CompareTag("Player")) 
         {
             if(!isFull && eKey.activeSelf && Input.GetKeyDown(KeyCode.E)) {
+                SceneManager.LoadScene(MinigameScene.name);
                 SetBowlFull();
             }
         }
