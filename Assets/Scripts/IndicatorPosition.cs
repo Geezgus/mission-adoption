@@ -28,4 +28,8 @@ public class IndicatorPosition : MonoBehaviour
         // Ajusta a posição do indicador na tela
         rectTransform.position = screenPos;
     }
+
+    public void setOffSet(Vector3 vector3) {
+        offset = vector3;
+    }
 }

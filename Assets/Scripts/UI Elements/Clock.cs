@@ -1,34 +1,63 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VectorGraphics;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class Clock : MonoBehaviour
 {
-    [SerializeField] float timePerDayInGame = 10f;
-    [SerializeField] TimeMeasurement timeMeasurement = TimeMeasurement.Minutes;
-    
-    float timeOfDayInSeconds = 0;
-    
-    enum TimeMeasurement {Hours, Minutes, Seconds};
+    public int Days {get; private set;}
+    public int Hours {get; private set;}
+    public int Minutes {get; private set;}
+    public int Seconds {get; private set;}
+
+    [SerializeField, Range(0.0000001f, 0.00695f)] float speedupFactor =  0.00695f;
 
     void Update()
     {
-        timeOfDayInSeconds = getTimeOfDayInSeconds();
+        float time = (Time.time / speedupFactor);
+        TimeSpan timeSpan = TimeSpan.FromSeconds(time);
+
         float rotationDegreesPerDay = 360f;
         const int CLOCKWISE = -1;
 
-        transform.eulerAngles = new Vector3(0, 0, CLOCKWISE * timeOfDayInSeconds * rotationDegreesPerDay);
+        Days = timeSpan.Days;
+        Hours = timeSpan.Hours;
+        Minutes = timeSpan.Minutes;
+        Seconds = timeSpan.Seconds;
+
+        transform.eulerAngles = new Vector3(0, 0, 180 + CLOCKWISE * (time/HoursToSeconds(24)) * rotationDegreesPerDay);
     }
-    
-    float getTimeOfDayInSeconds()
+
+
+    public float MinutesToHours(float m)
     {
-        return timeMeasurement switch
-        {
-            TimeMeasurement.Hours => (timeOfDayInSeconds + Time.deltaTime / (timePerDayInGame * 3600)) % 1,
-            TimeMeasurement.Minutes => (timeOfDayInSeconds + Time.deltaTime / (timePerDayInGame * 60)) % 1,
-            _ => (timeOfDayInSeconds + Time.deltaTime / timePerDayInGame) % 1,
-        };
+        return 60 * m;
+    }
+
+    public float SecondsToHours(float s)
+    {
+        return s / 3600f;
+    }
+
+    public float HoursToMinutes(float h)
+    {
+        return 60 * h;
+    }
+
+    public float SecondsToMinutes(float s)
+    {
+        return s / 60f;
+    }
+
+    public float HoursToSeconds(float h)
+    {
+        return 3600 * h;
+    }
+
+    public float MinutesToSeconds(float m)
+    {
+        return 60 * m;
     }
 }
