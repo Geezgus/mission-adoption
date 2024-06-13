@@ -11,6 +11,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject configPanel;
     [SerializeField] private GameObject creditsPanel;
 
+    void Start() {
+          configPanel.SetActive(false);
+          creditsPanel.SetActive(false);
+    }
+
    public void Iniciar() {
     SceneManager.LoadScene(gameScene);
    }
