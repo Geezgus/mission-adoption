@@ -116,4 +116,16 @@ public class StoryController : MonoBehaviour
         BadEnd.gameObject.SetActive(true);
 
     }
+
+    public void CloseAll() {
+        foreach(GameObject part in parts)
+        {
+            part.SetActive(false);
+        }
+        foreach(Image indicator in partIndicators)
+        {
+            indicator.gameObject.SetActive(false);
+        }
+        NextButton.gameObject.SetActive(false);
+    }
 }

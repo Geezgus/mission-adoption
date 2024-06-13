@@ -1,0 +1,52 @@
+{ "perguntas":[
+    {
+        "texto": "Você está dando água e hidratando Panqueca? É muito importante garantir que ela esteja sempre bem hidratada para manter sua saúde em dia.",
+        "resposta": "sim",
+        "peso": 3
+    },
+    {
+        "texto": "Bater em Panqueca é uma boa forma de discipliná-la?",
+        "resposta": "nao",
+        "peso": 3
+    },
+    {
+        "texto": "Você está dando comida para Panqueca regularmente? A alimentação adequada é essencial para o crescimento e bem-estar dela.",
+        "resposta": "sim",
+        "peso": 3
+    },
+    {
+        "texto": "Deixar Panqueca sozinha por longos períodos é saudável para ela?",
+        "resposta": "nao",
+        "peso": 2
+    },
+    {
+        "texto": "Você está proporcionando um ambiente tranquilo e seguro para Panqueca, evitando barulhos altos e situações estressantes? Um ambiente calmo é vital para o bem-estar dela.",
+        "resposta": "sim",
+        "peso": 1
+    },
+    {
+        "texto": "Você está ciente da importância da castração? Castrar Panqueca quando estiver na hora ajuda a prevenir várias doenças e controlar a população de animais de rua. Você pretende fazer isso?",
+        "resposta": "sim",
+        "peso": 2
+    },
+    {
+        "texto": "Alimentar Panqueca com restos de comida humana é adequado? A dieta de um gato deve ser específica para suas necessidades nutricionais.",
+        "resposta": "nao",
+        "peso": 3
+    },
+    {
+        "texto": "Manter a vacinação em dia é ideal para prevenir várias doenças graves. Você se compromete a levar Panqueca para se vacinar sempre que precisar e manter a cartela de vacinação em dia?",
+        "resposta": "sim",
+        "peso": 3
+    },
+    {
+        "texto": "Cortar as unhas de Panqueca faz parte da higiene. Unhas bem cuidadas evitam desconfortos e possíveis infecções. Você está ciente da importância disso e se compromete a cortar as unhas dela regularmente?",
+        "resposta": "sim",
+        "peso": 1
+    },
+    {
+        "texto": "Exames de rotina são importantes para monitorar a saúde de Panqueca e detectar possíveis problemas precocemente. Você se compromete a levá-la para exames regulares?",
+        "resposta": "sim",
+        "peso": 3
+    }
+]}
