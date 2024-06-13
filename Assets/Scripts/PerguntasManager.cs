@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class PerguntasManager : MonoBehaviour
 {
     public GameObject story;
-    public StoryController storyController;
+    public GameObject questPanel, visitPanel;
+    private StoryController storyController;
     public Text perguntaText;
     public Button botaoSim;
     public Button botaoNao;
@@ -18,16 +19,30 @@ public class PerguntasManager : MonoBehaviour
 
     void Start()
     {
+        visitPanel.SetActive(false);
+        questPanel.SetActive(false);
         gameObject.SetActive(false);
+        
         CarregarPerguntasDoJson();
-        botaoSim.onClick.AddListener(() => Responder("sim"));
-        botaoNao.onClick.AddListener(() => Responder("nao"));
+
+        botaoSim.onClick.AddListener(() => StartQuestions());
+        botaoNao.onClick.AddListener(() => EndGame());
+        
         MostrarProximaPergunta();
         AtualizarPontuacao();
 
         storyController = story.GetComponent<StoryController>();
     }
 
+    void StartQuestions() {
+        visitPanel.SetActive(false);
+        questPanel.SetActive(true);
+
+        botaoSim.onClick.RemoveAllListeners();
+        botaoNao.onClick.RemoveAllListeners();
+        botaoSim.onClick.AddListener(() => Responder("sim"));
+        botaoNao.onClick.AddListener(() => Responder("nao"));
+    }
     void CarregarPerguntasDoJson()
     {
         if (jsonFile != null)
@@ -80,8 +95,8 @@ public class PerguntasManager : MonoBehaviour
         pontuacaoText.text = "Pontuação: " + pontuacao;
     }
 
-    void StartQuestions() {
-        gameObject.SetActive(true);
+    void StartDoctorStage() {
+        visitPanel.SetActive(true);
     }
 
     void EndGame() {
