@@ -1,17 +1,21 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StoryController : MonoBehaviour
 {
+     [SerializeField] private string menuScene;
     public GameObject Pt1;
     public GameObject Pt2;
     public GameObject Pt3;
+    public GameObject GoodEnd, BadEnd;
     
     public GameObject Parts;
 
     public Button NextButton;
     public Button PrevButton;
     public Button PlayButton;
+    public Button MenuButton;
 
     private int currentPartIndex = 0;
 
@@ -24,6 +28,10 @@ public class StoryController : MonoBehaviour
 
     void Start()
     {
+        MenuButton.gameObject.SetActive(false);
+        GoodEnd.gameObject.SetActive(false);
+        BadEnd.gameObject.SetActive(false);
+
         parts = new GameObject[] { Pt1, Pt2, Pt3 };
         partIndicators = Parts.GetComponentsInChildren<Image>();
 
@@ -32,6 +40,7 @@ public class StoryController : MonoBehaviour
         NextButton.onClick.AddListener(NextPart);
         PrevButton.onClick.AddListener(PrevPart);
         PlayButton.onClick.AddListener(StartGame);
+        MenuButton.onClick.AddListener(MainMenu);
 
         PauseGame();
     }
@@ -90,5 +99,21 @@ public class StoryController : MonoBehaviour
     void UnpauseGame()
     {
         Time.timeScale = 1f;
+    }
+
+    void MainMenu() {
+        SceneManager.LoadScene(menuScene);
+    }
+
+    public void GoodEndPanel() {
+        MenuButton.gameObject.SetActive(true);
+        GoodEnd.gameObject.SetActive(true);
+
+    }
+
+    public void BadEndPanel() {
+        MenuButton.gameObject.SetActive(true);
+        BadEnd.gameObject.SetActive(true);
+
     }
 }
