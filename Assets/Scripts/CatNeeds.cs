@@ -51,7 +51,6 @@ public class CatNeeds : MonoBehaviour
     {
         if (lastHour != clock.Hours % 24)
         {
-            print(clock.Hours);
             lastHour = clock.Hours % 24;
 
             hunger = Mathf.Max(hunger - (hungerSlider.maxValue / 12f), 0);
@@ -77,18 +76,12 @@ public class CatNeeds : MonoBehaviour
         // {
         //     if(hunger > 0f) hunger -= hungerDecreaseRate * Time.deltaTime;
         //     hungerSlider.value = hunger;
-
-            
-        
-           
         // }
-
         // if (!isDrinking)
         // {
         //     if(thirst > 0f ) thirst -= thirstDecreaseRate * Time.deltaTime;
         //     thirstSlider.value = thirst;
         //      
-
         // }
 
         if(isEating && hunger <= 100f && onFoodBowl) Eat();

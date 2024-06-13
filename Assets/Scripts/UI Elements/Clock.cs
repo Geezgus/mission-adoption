@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class Clock : MonoBehaviour
 {
+    public int Days {get; private set;}
     public int Hours {get; private set;}
     public int Minutes {get; private set;}
     public int Seconds {get; private set;}
@@ -21,6 +22,7 @@ public class Clock : MonoBehaviour
         float rotationDegreesPerDay = 360f;
         const int CLOCKWISE = -1;
 
+        Days = timeSpan.Days;
         Hours = timeSpan.Hours;
         Minutes = timeSpan.Minutes;
         Seconds = timeSpan.Seconds;
