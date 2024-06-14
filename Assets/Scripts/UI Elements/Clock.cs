@@ -22,7 +22,7 @@ public class Clock : MonoBehaviour
         float rotationDegreesPerDay = 360f;
         const int CLOCKWISE = -1;
 
-        Days = timeSpan.Days;
+        Days = timeSpan.Days + 3;
         Hours = timeSpan.Hours;
         Minutes = timeSpan.Minutes;
         Seconds = timeSpan.Seconds;

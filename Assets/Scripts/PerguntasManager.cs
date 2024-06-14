@@ -95,7 +95,8 @@ public class PerguntasManager : MonoBehaviour
         pontuacaoText.text = "Pontuação: " + pontuacao;
     }
 
-    void StartDoctorStage() {
+    public void StartDoctorStage() {
+        gameObject.SetActive(true);
         visitPanel.SetActive(true);
     }
 
@@ -104,6 +105,6 @@ public class PerguntasManager : MonoBehaviour
         if(pontuacao >= 20) storyController.GoodEndPanel();
         else                storyController.BadEndPanel();
 
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 }

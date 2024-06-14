@@ -42,7 +42,7 @@ public class Bowl : MonoBehaviour
         else if (other.CompareTag("Player")) 
         {
             if(!isFull && eKey.activeSelf && Input.GetKeyDown(KeyCode.E)) {
-                SceneManager.LoadScene(MinigameScene.name);
+                // SceneManager.LoadScene(MinigameScene.name);
                 SetBowlFull();
             }
         }

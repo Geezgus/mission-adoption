@@ -5,11 +5,14 @@ using UnityEngine;
 public class GameOverController : MonoBehaviour
 {
     [SerializeField] Clock clock;
+
+    [SerializeField] GameObject vet;
+    private PerguntasManager manager;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        manager = vet.GetComponent<PerguntasManager>();
     }
 
     // Update is called once per frame
@@ -18,7 +21,7 @@ public class GameOverController : MonoBehaviour
         if (clock.Days >= 5)
         {
             print("Game Over");
-            // GAME OVER
+            manager.StartDoctorStage();
         }
     }
 }
